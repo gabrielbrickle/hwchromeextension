@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "Getting started example",
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ],
+  "description": "This extension shows a Google Image search result for the current page",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "feather.png",
+    "default_popup": "popup.html",
+    "default_title": "Click for fun!"
+  },
+  "background": {
+    "scripts": ["popup.js"],
+    "persistent": false
+  }
+
+}
